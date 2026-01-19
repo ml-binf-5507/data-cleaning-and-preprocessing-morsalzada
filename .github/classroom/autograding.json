@@ -1,0 +1,174 @@
+{
+  "tests": [
+    {
+      "name": "Unit: detect_feature_types (feedback only)",
+      "setup": "pip install -r requirements.txt",
+      "run": "pytest tests/test_preprocessing.py::TestStudentFunctions::test_detect_feature_types -v",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 0
+    },
+    {
+      "name": "Unit: encode_categorical (feedback only)",
+      "setup": "",
+      "run": "pytest tests/test_preprocessing.py::TestStudentFunctions::test_encode_categorical -v",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 0
+    },
+    {
+      "name": "Unit: scale_numeric (feedback only)",
+      "setup": "",
+      "run": "pytest tests/test_preprocessing.py::TestStudentFunctions::test_scale_numeric -v",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 0
+    },
+    {
+      "name": "Phase 1.1: Output Files Created",
+      "setup": "",
+      "run": "pytest tests/test_preprocessing.py::TestPhase1Basic::test_files_created -v",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 5
+    },
+    {
+      "name": "Phase 1.2: Summary Readable",
+      "setup": "",
+      "run": "pytest tests/test_preprocessing.py::TestPhase1Basic::test_summary_readable -v",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 5
+    },
+    {
+      "name": "Phase 1.3: Train/Test Split",
+      "setup": "",
+      "run": "pytest tests/test_preprocessing.py::TestPhase1Basic::test_train_test_split -v",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 5
+    },
+    {
+      "name": "Phase 2.1: Duplicates Removed",
+      "setup": "",
+      "run": "pytest tests/test_preprocessing.py::TestPhase2DataCleaning::test_duplicates_removed -v",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 8
+    },
+    {
+      "name": "Phase 2.2: No Missing in Features",
+      "setup": "",
+      "run": "pytest tests/test_preprocessing.py::TestPhase2DataCleaning::test_no_missing_in_features -v",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 6
+    },
+    {
+      "name": "Phase 2.2b: No Missing in Test Set",
+      "setup": "",
+      "run": "pytest tests/test_preprocessing.py::TestPhase2DataCleaning::test_no_missing_in_test -v",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 5
+    },
+    {
+      "name": "Phase 2.3: All Features Numeric (Train)",
+      "setup": "",
+      "run": "pytest tests/test_preprocessing.py::TestPhase2DataCleaning::test_all_features_numeric -v",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 4
+    },
+    {
+      "name": "Phase 2.3b: All Features Numeric (Test)",
+      "setup": "",
+      "run": "pytest tests/test_preprocessing.py::TestPhase2DataCleaning::test_all_features_numeric_test -v",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 4
+    },
+    {
+      "name": "Phase 2.4: ID Columns Preserved",
+      "setup": "",
+      "run": "pytest tests/test_preprocessing.py::TestPhase2DataCleaning::test_id_cols_preserved -v",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 3
+    },
+    {
+      "name": "Phase 2.5: Same Columns in Train and Test",
+      "setup": "",
+      "run": "pytest tests/test_preprocessing.py::TestPhase2DataCleaning::test_train_test_same_columns -v",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 8
+    },
+    {
+      "name": "Phase 3.1: Categorical Encoded",
+      "setup": "",
+      "run": "pytest tests/test_preprocessing.py::TestPhase3Transformations::test_categorical_encoded -v",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 12
+    },
+    {
+      "name": "Phase 3.2: Numeric Identified",
+      "setup": "",
+      "run": "pytest tests/test_preprocessing.py::TestPhase3Transformations::test_numeric_identified -v",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 8
+    },
+    {
+      "name": "Phase 3.3: Numeric Scaled",
+      "setup": "",
+      "run": "pytest tests/test_preprocessing.py::TestPhase3Transformations::test_numeric_scaled -v",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 15
+    },
+    {
+      "name": "Phase 4: No Data Leakage",
+      "setup": "",
+      "run": "pytest tests/test_preprocessing.py::TestPhase4NoLeakage::test_scaling_computed_from_train -v",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 20
+    }
+  ]
+}
